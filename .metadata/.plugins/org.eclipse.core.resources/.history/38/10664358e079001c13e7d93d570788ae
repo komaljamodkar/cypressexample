@@ -1,0 +1,33 @@
+describe('chain locators steps',function(){
+	it('locators element',function(){
+
+		browser.get('http://juliemr.github.io/protractor-demo/');
+
+		element(by.model("first")).sendKeys("3");
+		element(by.model("second")).sendKeys("3").then(function(){
+			element(by.id("gobutton")).click();
+		});
+		element(by.model("first")).sendKeys("3");
+		element(by.model("second")).sendKeys("7").then(function(){
+			element(by.id("gobutton")).click();
+		});
+		element(by.model("first")).sendKeys("3");
+		element(by.model("second")).sendKeys("8").then(function(){
+			element(by.id("gobutton")).click();
+		});
+
+		element.all(by.repeater("result in memory")).count().then(function(text){
+			console.log("count :",text);
+			
+			var i=0;
+			while(i<text){
+				element(by.repeater("result in memory")).element(by.css("td:nth-child(",i,")")).getText().then(function(text){
+					console.log(text);
+				})
+				i++;
+			}
+		});
+		
+		
+});
+});

@@ -1,0 +1,22 @@
+console.log("abcd")
+//dynamic type language
+var x=20
+var x="abcd"
+console.log(x)
+//if(x==e){}
+//else if(){}
+//else{}
+//var b=["abc","cv",4,"as"];
+//b[i]
+//str operation
+//b.length
+//b.concat()
+var a=[];
+//for(var i=1;i<5;) goes infinite
+for(var i=1;i<5;i++){
+	for(var j=1;j<5;j++){
+		console.log("*");
+	}
+	
+}
+

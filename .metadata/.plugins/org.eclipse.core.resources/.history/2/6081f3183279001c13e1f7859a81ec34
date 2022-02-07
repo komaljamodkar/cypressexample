@@ -1,0 +1,5 @@
+console.log("abcd")
+//dynamic type language
+var x=20
+var x="abcd"
+console.log(x.type)

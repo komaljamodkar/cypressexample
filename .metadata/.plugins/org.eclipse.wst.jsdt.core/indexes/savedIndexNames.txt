@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\developmentAveto\prcode\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4234658954.index
+1670333478.index
+316542368.index
+1399891756.index
+499468676.index
+3684679825.index
+271109542.index

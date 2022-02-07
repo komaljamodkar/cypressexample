@@ -1,0 +1,11 @@
+describe('steps',function(){
+	it('Open Angular js website',function(){
+		browser.get("https://www.google.com");
+		console.log('title : ',browser.getTitle());
+	});
+	
+	it('Close Angular js website',function(){
+		browser.close();
+		console.log('browser closed');
+	});
+});
